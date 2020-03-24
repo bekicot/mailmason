@@ -1,11 +1,7 @@
-[Product Name] ( https://example.com )
+ISA ( https://staging.isa-platform.hacktiv8.com )
 
 {{{ @content }}}
 
-© 2019 [Product Name]. All rights reserved.
+PT Hacktivate Teknologi Indonesia. All Rights Reserved.
 
-[Company Name, LLC]
-
-1234 Street Rd.
-
-Suite 1234
+Gedung Aquarius - Jalan Sultan Iskandar Muda No. 7 Arteri Pondok Indah RT 05 RW 09Kebayoran Lama, Jakarta Selatan, 12240

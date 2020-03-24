@@ -1,0 +1,96 @@
+
+
+<h1 class="align-center">ISA Monthly Billing Statement</h1>
+<hr width="370" style="border: solid 1px #dbdbdb;" />
+
+<p>Hai <strong>{{student.name}}</strong>,</p>
+
+<p>Tagihan Income Sharing Agreement (ISA) Anda untuk program Fullstack Javascript Hacktiv8 telah tersedia.</p>
+
+<table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+  <td><strong>Billing Code</strong></td>
+    <td>: {{billing_statement.code}}</td>
+    <td><strong>Phone Number</strong></td>
+    <td>: {{student.phone}}</td>
+  </tr>
+  <tr>
+    <td><strong>Contract ID</strong></td>
+    <td>: {{agreement_contract.id}}</td>
+    <td><strong>Student Email</strong></td>
+    <td>: {{student.email}}</td>
+  </tr>
+  <tr>
+    <td><strong>Print Date</strong></td>
+    <td>: {{billing_statement.print_date}}</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<br />
+<br />
+<h2>Transaction Summary</h2>
+<table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr class="table-header">
+    <td><strong>Total Billing Amount</strong></td>
+    <td><strong>Min Payment</strong></td>
+    <td><strong>Payment Due Date</strong></td>
+  </tr>
+  <tr>
+    <td class="table-body">{{billing_statement.total_amount}}</td>
+    <td class="table-body">{{billing_statement.min_payment}}</td>
+    <td class="table-body">{{billing_statement.due_date}}</td>
+  </tr>
+</table>
+<br />
+<br />
+<h2>Transaction Details</h2>
+<table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr class="table-header">
+    <td><strong>Transaction Date</strong></td>
+    <td><strong>Posting Date</strong></td>
+    <td><strong>Transaction Description</strong></td>
+    <td><strong>Amount</strong></td>
+  </tr>
+  <tr>
+    {{#each billing_transactions}}
+      <td class="table-body"\>{{transaction_date}}</td>
+      <td class="table-body"\>{{posting_date}}</td>
+      <td class="table-body"\>{{description}}</td>
+      <td class="table-body"\>{{amount}}</td>
+    {{\each}}
+  </tr>
+  <tr class="table-footer">
+      <td></td>
+      <td></td>
+      <td>Total</td>
+      <td>{{billing_statement.total_amount}}</td>
+  </tr>
+</table>
+
+<br />
+<br />
+<p>Pembayaran dapat dilakukan dengan cara transfer ke salah satu virtual account Bank di
+bawah ini :</p>
+
+<br />
+<br />
+<h2>Payment Method</h2>
+<table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr class="table-header">
+    <td>
+      Virtual Account Name
+    </td>
+    <td>
+      Virtual Account Number
+    </td>
+  </tr>
+  {{#each contract_vas}}
+    <td class="table-body">{{ bank_name }}</td>
+    <td class="table-body">{{ va_number }}</td>
+  {{/each}}
+</table>
+
+<p>
+Jika Anda memiliki pertanyaan, silakan hubungi kami melalui email: <strong>kontakisa@hacktiv8.com</strong>, atau telepon: <strong>(021) 1234567890</strong> yang aktif selama jam operasional, <strong>Senin-Jumat pukul 08.30 - 17.00 WIB</strong>.
+</p>
