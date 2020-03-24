@@ -49,7 +49,7 @@ Amount
 {{posting_date}}
 {{description}}
 {{amount}}
-{{\each}}
+{{/each}}
 
 Total
 {{billing_statement.total_amount}}

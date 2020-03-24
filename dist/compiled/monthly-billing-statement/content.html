@@ -538,7 +538,7 @@
                             <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{posting_date}}</td>
                             <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{description}}</td>
                             <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{amount}}</td>
-                            {{\each}}
+                            {{/each}}
                           </tr>
                           <tr class="table-footer" style="background-color: #f5f5f5; height: 40px;" bgcolor="#f5f5f5">
                             <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;"></td>
@@ -562,10 +562,12 @@
                               Virtual Account Number
                             </td>
                           </tr>
-                          {{#each contract_vas}}
-                          <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{ bank_name }}</td>
-                          <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{ va_number }}</td>
-                          {{/each}}
+                          <tr>
+                            {{#each contract_vas}}
+                            <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{ bank_name }}</td>
+                            <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{ va_number }}</td>
+                            {{/each}}
+                          </tr>
                         </table>
                         <p style="font-size: 14px; line-height: 24px; color: #51545E; margin: .4em 0 1.1875em;">
                           Jika Anda memiliki pertanyaan, silakan hubungi kami melalui email: <strong>kontakisa@hacktiv8.com</strong>, atau telepon: <strong>(021) 1234567890</strong> yang aktif selama jam operasional, <strong>Senin-Jumat pukul 08.30 - 17.00 WIB</strong>.

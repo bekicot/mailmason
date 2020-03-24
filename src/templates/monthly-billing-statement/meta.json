@@ -3,5 +3,5 @@
   "Alias": "monthly_billing_statement",
   "Subject": "ISA Billing Statement For {{billing_statement.month}}",
   "TemplateType": "Standard",
-  "LayoutTemplate": "basic"
+  "LayoutTemplate": "basic-full"
 }

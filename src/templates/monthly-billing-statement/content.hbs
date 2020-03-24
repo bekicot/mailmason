@@ -57,11 +57,11 @@ preheader: "ISA Monthly Billing Statement."
   </tr>
   <tr>
     \{{#each billing_transactions}}
-      <td class="table-body"\>\{{transaction_date}}</td>
-      <td class="table-body"\>\{{posting_date}}</td>
-      <td class="table-body"\>\{{description}}</td>
-      <td class="table-body"\>\{{amount}}</td>
-    \{{\each}}
+      <td class="table-body">\{{transaction_date}}</td>
+      <td class="table-body">\{{posting_date}}</td>
+      <td class="table-body">\{{description}}</td>
+      <td class="table-body">\{{amount}}</td>
+    \{{/each}}
   </tr>
   <tr class="table-footer">
       <td></td>
@@ -88,10 +88,12 @@ bawah ini :</p>
       Virtual Account Number
     </td>
   </tr>
-  \{{#each contract_vas}}
-    <td class="table-body">\{{ bank_name }}</td>
-    <td class="table-body">\{{ va_number }}</td>
-  \{{/each}}
+  <tr>
+    \{{#each contract_vas}}
+      <td class="table-body">\{{ bank_name }}</td>
+      <td class="table-body">\{{ va_number }}</td>
+    \{{/each}}
+  </tr>
 </table>
 
 <p>

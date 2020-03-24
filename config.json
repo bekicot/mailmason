@@ -1,7 +1,7 @@
 {
   "postmark": {
     "from": "yasiswanto@hacktiv8.com",
-    "to": "yana.developer@gmail.com",
+    "to": "yasiswanto@hacktiv8.com",
     "subject": "Test Email (From ISA@HACKTIV8)"
   },
   "strings": {
