@@ -1,0 +1,47 @@
+{
+  "postmark": {
+    "from": "yasiswanto@hacktiv8.com",
+    "to": "yana.developer@gmail.com",
+    "subject": "Test Email (From ISA@HACKTIV8)"
+  },
+  "strings": {
+    "sender_name": "Yana from Hacktiv8",
+    "product_name": "ISA",
+    "product_url": "https://staging.isa-platform.hacktiv8.com",
+    "credit_card_statement_name": "PT Hacktivate Teknologi Indonesia",
+    "formal_company_name": "PT Hacktivate Teknologi Indonesia",
+    "address_line_1": "Gedung Aquarius - Jalan Sultan Iskandar Muda No. 7 Arteri Pondok Indah RT 05 RW 09Kebayoran Lama, Jakarta Selatan, 12240",
+    "address_line_2": null,
+    "city": "Jakarta Selatan",
+    "state": "DKI Jakarta",
+    "country": "Indonesia",
+    "phone": " (021) 80675787",
+    "litmus_email": "something@litmus.com"
+  },
+  "images": {
+    "use_images": true,
+    "images_url": "https://s3.ap-southeast-1.amazonaws.com/assets.email.hacktiv8.com/images/",
+    "logo_file": "logo-hacktiv-8-01.png",
+    "logo_width": "74",
+    "use_social_circles": false,
+    "twitter_url": "",
+    "facebook_url": "",
+    "pinterest_url": "",
+    "instagram_url": "",
+    "google_plus_url": "",
+    "youtube_url": "",
+    "linkedin_url": "",
+    "dribbble_url": ""
+  },
+  "ftp": {
+    "host": "12.34.56.79",
+    "port": "21",
+    "src": "src/images",
+    "dest": "/example/images"
+  },
+  "s3": {
+    "bucket": "",
+    "region": "",
+    "overwrite": true
+  }
+}
