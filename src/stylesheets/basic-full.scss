@@ -50,13 +50,13 @@ p.sub {
   background-color: #FFFFFF;
 
   &_inner {
-    @include table-scale($width: 570px, $margin: 0 auto);
+    @include table-scale($width: 640px, $margin: 0 auto);
     background-color: #FFFFFF;
   }
 }
 
 .email-footer {
-  @include table-scale($width: 570px, $margin: 0 auto);
+  @include table-scale($width: 640px, $margin: 0 auto);
   text-align: center;
 
   p {
