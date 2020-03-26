@@ -483,6 +483,7 @@
                   <tr>
                     <td class="content-cell" style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 35px;">
                       <div class="f-fallback">
+                        {{#billing_statement}}
                         <h1 class="align-center" style="margin-top: 0; color: #333333; font-size: 22px; font-weight: bold; text-align: center;" align="center">ISA Monthly Billing Statement</h1>
                         <hr width="370" style="border: 1px solid #dbdbdb;" />
                         <p style="font-size: 14px; line-height: 24px; color: #51545E; margin: .4em 0 1.1875em;">Hai <strong>{{student.name}}</strong>,</p>
@@ -490,7 +491,7 @@
                         <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
                             <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;"><strong>Billing Code</strong></td>
-                            <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">: {{billing_statement.code}}</td>
+                            <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">: {{billing_code}}</td>
                             <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;"><strong>Phone Number</strong></td>
                             <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">: {{student.phone}}</td>
                           </tr>
@@ -502,7 +503,7 @@
                           </tr>
                           <tr>
                             <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;"><strong>Print Date</strong></td>
-                            <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">: {{billing_statement.print_date}}</td>
+                            <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">: {{print_date}}</td>
                             <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;"></td>
                             <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;"></td>
                           </tr>
@@ -517,9 +518,9 @@
                             <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;"><strong>Payment Due Date</strong></td>
                           </tr>
                           <tr>
-                            <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{billing_statement.total_amount}}</td>
-                            <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{billing_statement.min_payment}}</td>
-                            <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{billing_statement.due_date}}</td>
+                            <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{total_amount}}</td>
+                            <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{min_payment_amount}}</td>
+                            <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{due_date}}</td>
                           </tr>
                         </table>
                         <br />
@@ -532,19 +533,19 @@
                             <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;"><strong>Transaction Description</strong></td>
                             <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;"><strong>Amount</strong></td>
                           </tr>
+                          {{#each billing_transactions}}
                           <tr>
-                            {{#each billing_transactions}}
                             <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{transaction_date}}</td>
                             <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{posting_date}}</td>
-                            <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{description}}</td>
+                            <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{transaction_detail}}</td>
                             <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{amount}}</td>
-                            {{/each}}
                           </tr>
+                          {{/each}}
                           <tr class="table-footer" style="background-color: #f5f5f5; height: 40px;" bgcolor="#f5f5f5">
                             <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;"></td>
                             <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;"></td>
                             <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">Total</td>
-                            <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{billing_statement.total_amount}}</td>
+                            <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{total_amount}}</td>
                           </tr>
                         </table>
                         <br />
@@ -562,16 +563,17 @@
                               Virtual Account Number
                             </td>
                           </tr>
+                          {{#each contract_vas}}
                           <tr>
-                            {{#each contract_vas}}
                             <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{ bank_name }}</td>
                             <td class="table-body" style="word-break: break-word; border-bottom-width: 1px; border-bottom-color: #dbdbdb; border-bottom-style: solid; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{ va_number }}</td>
-                            {{/each}}
                           </tr>
+                          {{/each}}
                         </table>
                         <p style="font-size: 14px; line-height: 24px; color: #51545E; margin: .4em 0 1.1875em;">
                           Jika Anda memiliki pertanyaan, silakan hubungi kami melalui email: <strong>kontakisa@hacktiv8.com</strong>, atau telepon: <strong>(021) 1234567890</strong> yang aktif selama jam operasional, <strong>Senin-Jumat pukul 08.30 - 17.00 WIB</strong>.
                         </p>
+                        {{/billing_statement}}
                       </div>
                     </td>
                   </tr>

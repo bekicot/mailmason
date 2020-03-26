@@ -1,3 +1,5 @@
+{{#billing_statement}}
+
 *****************************
 ISA Monthly Billing Statement
 *****************************
@@ -7,7 +9,7 @@ Hai {{student.name}},
 Tagihan Income Sharing Agreement (ISA) Anda untuk program Fullstack Javascript Hacktiv8 telah tersedia.
 
 Billing Code
-: {{billing_statement.code}}
+: {{billing_code}}
 Phone Number
 : {{student.phone}}
 
@@ -17,7 +19,7 @@ Student Email
 : {{student.email}}
 
 Print Date
-: {{billing_statement.print_date}}
+: {{print_date}}
 
 -------------------
 Transaction Summary
@@ -27,9 +29,9 @@ Total Billing Amount
 Min Payment
 Payment Due Date
 
-{{billing_statement.total_amount}}
-{{billing_statement.min_payment}}
-{{billing_statement.due_date}}
+{{total_amount}}
+{{min_payment_amount}}
+{{due_date}}
 
 -------------------
 Transaction Details
@@ -41,14 +43,16 @@ Transaction Description
 Amount
 
 {{#each billing_transactions}}
+
 {{transaction_date}}
 {{posting_date}}
-{{description}}
+{{transaction_detail}}
 {{amount}}
+
 {{/each}}
 
 Total
-{{billing_statement.total_amount}}
+{{total_amount}}
 
 Pembayaran dapat dilakukan dengan cara transfer ke salah satu virtual account Bank di
 bawah ini :
@@ -62,8 +66,12 @@ Virtual Account Name
 Virtual Account Number
 
 {{#each contract_vas}}
+
 {{ bank_name }}
 {{ va_number }}
+
 {{/each}}
 
 Jika Anda memiliki pertanyaan, silakan hubungi kami melalui email: kontakisa@hacktiv8.com, atau telepon: (021) 1234567890 yang aktif selama jam operasional, Senin-Jumat pukul 08.30 - 17.00 WIB.
+
+{{/billing_statement}}
