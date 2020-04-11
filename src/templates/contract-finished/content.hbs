@@ -1,0 +1,32 @@
+---
+layout: basic-full/content.hbs
+preheader: "ISA Monthly Billing Statement."
+---
+\{{#billing_statement}}
+
+<p>
+Kepada \{{student.name}},
+</p>
+
+<p>
+Melalui email ini, kami akan menginformasikan kontrak <strong>Income Sharing Agreement (ISA)</strong> telah berakhir,
+terimakasih Anda telah melaksanakan kewajiban untuk menyelesaikan kontrak.
+</p>
+
+<p>
+Dengan berakhirnya kontrak, sekali lagi kami ucapkan terima kasih atas kerjasama Anda selama ini. Sukses selalu dalam berkarir!
+</p>
+
+<p>
+Terlampir dokumen <strong>Surat Berakhirnya Kontrak Income Sharing Agreement</strong>.
+Silahkan download document ini dengan menggunakan password <strong>ddmmyy</strong> untuk membuka <strong>Billing Statement</strong> Anda yang terdiri dari :
+</p>
+
+{{> pdf_password}}
+
+<p>
+Jika Anda memiliki pertanyaan, silahkan hubungi kami melalui email: <strong>team-isa@hacktiv8.com</strong>,
+yang aktif selama jam operasional, <strong>Senin-Jumat pukul 09.00 - 18.00 WIB</strong>.
+</p>
+
+\{{/billing_statement}}

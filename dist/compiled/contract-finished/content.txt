@@ -6,9 +6,12 @@ ISA ( https://staging.isa-platform.hacktiv8.com )
 
 Kepada {{student.name}},
 
-Terima kasih atas kepercayaan Anda menggunakan layanan Income Sharing Agreement (ISA).
+Melalui email ini, kami akan menginformasikan kontrak Income Sharing Agreement (ISA) telah berakhir,
+terimakasih Anda telah melaksanakan kewajiban untuk menyelesaikan kontrak.
 
-Melalui email ini, kami lampirkan dokumen Billing Statement Income Sharing Agreement (ISA).
+Dengan berakhirnya kontrak, sekali lagi kami ucapkan terima kasih atas kerjasama Anda selama ini. Sukses selalu dalam berkarir!
+
+Terlampir dokumen Surat Berakhirnya Kontrak Income Sharing Agreement.
 Silahkan download document ini dengan menggunakan password ddmmyy untuk membuka Billing Statement Anda yang terdiri dari :
 
 dd :
@@ -26,8 +29,6 @@ Dua digit tahun lahir
 Contoh: Password dengan tanggal lahir 15 Maret 1993 adalah:
 
 200393
-
-Mohon abaikan pemberitahuan ini bila Anda telah melakukan pembayaran, email ini bersifat informasi dan tidak dapat di-reply.
 
 Jika Anda memiliki pertanyaan, silahkan hubungi kami melalui email: team-isa@hacktiv8.com,
 yang aktif selama jam operasional, Senin-Jumat pukul 09.00 - 18.00 WIB.

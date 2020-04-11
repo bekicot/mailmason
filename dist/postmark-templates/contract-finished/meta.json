@@ -1,0 +1,7 @@
+{
+  "Name": "Contract Finished",
+  "Alias": "contract_finished",
+  "Subject": "Selamat, Kontrak ISA Sudah Berakhir!",
+  "TemplateType": "Standard",
+  "LayoutTemplate": "basic-full"
+}
