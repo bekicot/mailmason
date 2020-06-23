@@ -1,0 +1,34 @@
+{{#agreement_contract}}
+
+Hai {{student.name}},
+
+Kontrak Income Sharing Agreement (ISA) Anda untuk program {{product.name}} aktif. Anda dapat mulai membayar tagihan ISA dengan ketentuan sebagai berikut :
+
+Contract ID
+: {{code}}
+
+Minimum Salary
+: {{qualified_monthly_earned_income}}
+
+Activation Date
+: {{activation_date}}
+
+Percentage Share
+: {{share_percentage}}
+
+Payment Cap
+Payment Term
+Agreement Length
+
+IDR {{payment_cap}}
+{{payment_term}} Bulan
+{{agreement_length}} Bulan
+
+Harap menghubungi ISA Provider mengenai status pekerjaan Anda paling lambat 3 bulan setelah kontrak aktif.
+
+Jika Anda memiliki pertanyaan, silakan hubungi kami melalui email: team-isa@hacktiv8.com, atau telepon:
+(021)
+80675787 yang aktif selama jam operasional, Senin-Jumat
+pukul 08.30 - 17.00 WIB.
+
+{{/agreement_contract}}

@@ -2,7 +2,7 @@
 layout: basic-full/content.hbs
 preheader: "ISA Monthly Billing Statement."
 ---
-\{{#billing_statement}}
+\{{#agreement_contract}}
 
 <p>
 Kepada \{{student.name}},
@@ -24,9 +24,6 @@ Silahkan download document ini dengan menggunakan password <strong>ddmmyy</stron
 
 {{> pdf_password}}
 
-<p>
-Jika Anda memiliki pertanyaan, silahkan hubungi kami melalui email: <strong>team-isa@hacktiv8.com</strong>,
-yang aktif selama jam operasional, <strong>Senin-Jumat pukul 09.00 - 18.00 WIB</strong>.
-</p>
+{{> isa_contact}}
 
-\{{/billing_statement}}
+\{{/agreement_contract}}

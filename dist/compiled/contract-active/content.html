@@ -578,7 +578,7 @@
     </style>
   </head>
   <body style="width: 100% !important; height: 100%; -webkit-text-size-adjust: none; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; background-color: #F4F4F7; color: #51545E; margin: 0;" bgcolor="#F4F4F7">
-    <span class="preheader" style="display: none !important; visibility: hidden; mso-hide: all; font-size: 1px; line-height: 1px; max-height: 0; max-width: 0; opacity: 0; overflow: hidden;">ISA Monthly Billing Statement.</span>
+    <span class="preheader" style="display: none !important; visibility: hidden; mso-hide: all; font-size: 1px; line-height: 1px; max-height: 0; max-width: 0; opacity: 0; overflow: hidden;">Kontrak ISA telah aktif.</span>
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; margin: 0; padding: 0; -premailer-width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; background-color: #F4F4F7; table-layout: auto; text-align: justify; border-collapse: collapse;" bgcolor="#F4F4F7">
       <tr>
         <td align="center" style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">
@@ -598,52 +598,61 @@
                   <tr>
                     <td class="content-cell" style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 35px;">
                       <div class="f-fallback">
-                        {{#billing_statement}}
-                        <p style="font-size: 14px; line-height: 24px; color: #51545E; text-align: justify; margin: .4em 0 1.1875em;" align="justify">
-                          Kepada {{student.name}},
-                        </p>
-                        <p style="font-size: 14px; line-height: 24px; color: #51545E; text-align: justify; margin: .4em 0 1.1875em;" align="justify">
-                          Terima kasih atas kepercayaan Anda menggunakan layanan <strong>Income Sharing Agreement (ISA)</strong>.
-                        </p>
-                        <p style="font-size: 14px; line-height: 24px; color: #51545E; text-align: justify; margin: .4em 0 1.1875em;" align="justify">
-                          Melalui email ini, kami lampirkan dokumen <strong>Billing Statement Income Sharing Agreement (ISA)</strong>. Silahkan download document ini dengan menggunakan password <strong>ddmmyy</strong> untuk membuka Billing Statement Anda yang terdiri dari :
-                        </p>
-                        <table style="table-layout: auto; width: 100%; text-align: justify; border-collapse: collapse; margin-top: 30px;">
-                          <tr>
-                            <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">
-                              dd :
-                            </td>
-                            <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">
-                              Dua digit tanggal lahir Anda
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">
-                              mm :
-                            </td>
-                            <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">
-                              Dua digit bulan lahir
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">
-                              yy :
-                            </td>
-                            <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">
-                              Dua digit tahun lahir
-                            </td>
-                          </tr>
-                        </table>
-                        <p style="font-size: 14px; line-height: 24px; color: #51545E; text-align: justify; margin: .4em 0 1.1875em;" align="justify">
-                          Contoh: Password dengan tanggal lahir 15 Maret 1993 adalah: </p>
-                        <p style="font-size: 14px; line-height: 24px; color: #51545E; text-align: justify; margin: .4em 0 1.1875em;" align="justify">200393</p>
-                        <p style="font-size: 14px; line-height: 24px; color: #51545E; text-align: justify; margin: .4em 0 1.1875em;" align="justify">
-                          Mohon abaikan pemberitahuan ini bila Anda telah melakukan pembayaran, email ini bersifat informasi dan tidak dapat di-reply.
-                        </p>
-                        <p style="font-size: 14px; line-height: 24px; color: #51545E; text-align: justify; margin: .4em 0 1.1875em;" align="justify">
-                          Jika Anda memiliki pertanyaan, silahkan hubungi kami melalui email: <strong>team-isa@hacktiv8.com</strong>, yang aktif selama jam operasional, <strong>Senin-Jumat pukul 09.00 - 18.00 WIB</strong>.
-                        </p>
-                        {{/billing_statement}}
+                        {{#agreement_contract}}
+                        <div class="email-body" style="width: 100%; margin: 40px 0 0; padding: 0; -premailer-width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; background-color: #FFFFFF; font-size: 14px;">
+                          <div>Hai {{student.name}},</div>
+                          <p style="font-size: 14px; line-height: 24px; color: #51545E; text-align: justify; margin: .4em 0 1.1875em;" align="justify">
+                            Kontrak <b>Income Sharing Agreement (ISA)</b> Anda untuk program <b>{{product.name}}</b> aktif. Anda dapat mulai membayar tagihan ISA dengan ketentuan sebagai berikut :
+                          </p>
+                          <table style="table-layout: auto; width: 100%; text-align: justify; border-collapse: collapse; margin-top: 30px;">
+                            <tr>
+                              <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">Contract ID</td>
+                              <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">: {{code}}</td>
+                            </tr>
+                            <tr>
+                              <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">Minimum Salary</td>
+                              <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">: {{qualified_monthly_earned_income}}</td>
+                            </tr>
+                            <tr>
+                              <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">Activation Date</td>
+                              <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">: {{activation_date}}</td>
+                            </tr>
+                            <tr>
+                              <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">Percentage Share</td>
+                              <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">: {{share_percentage}}</td>
+                            </tr>
+                          </table>
+                          <table style="table-layout: auto; width: 100%; text-align: justify; border-collapse: collapse; margin-top: 30px;">
+                            <colgroup>
+                              <col span="1" style="width: max-content;" />
+                              <col span="1" style="width: max-content;" />
+                              <col span="1" style="width: max-content;" />
+                            </colgroup>
+                            <thead style="background-color: #fef4e5;">
+                              <tr>
+                                <th style="font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">Payment Cap</th>
+                                <th style="font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">Payment Term</th>
+                                <th style="font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">Agreement Length</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">IDR {{payment_cap}}</td>
+                                <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{payment_term}} Bulan</td>
+                                <td style="word-break: break-word; font-family: Lato, &quot;Nunito Sans&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px;">{{agreement_length}} Bulan</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <p style="font-size: 14px; line-height: 24px; color: #51545E; text-align: justify; margin: 50px 0 1.1875em;" align="justify">
+                            Harap menghubungi ISA Provider mengenai status pekerjaan Anda paling lambat 3 bulan setelah kontrak aktif.
+                          </p>
+                          <p style="font-size: 14px; line-height: 24px; color: #51545E; text-align: justify; margin: .4em 0 1.1875em;" align="justify">Jika Anda memiliki pertanyaan, silakan hubungi kami melalui email: <span style="font-weight: normal;">team-isa@hacktiv8.com</span>, atau telepon:
+                            <span style="font-weight: normal;">(021)
+                    80675787</span> yang aktif selama jam operasional, <span style="font-weight: normal;">Senin-Jumat
+                    pukul 08.30 - 17.00 WIB</span>.
+                          </p>
+                        </div>
+                        {{/agreement_contract}}
                       </div>
                     </td>
                   </tr>

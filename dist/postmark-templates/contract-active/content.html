@@ -1,0 +1,56 @@
+
+{{#agreement_contract}}
+<div class="email-body">
+    <div>Hai {{student.name}},</div>
+    <p>
+    Kontrak <b>Income Sharing Agreement (ISA)</b> Anda untuk program <b>{{product.name}}</b> aktif. Anda dapat mulai membayar tagihan ISA dengan ketentuan sebagai berikut :
+    </p>
+    <table>
+      <tr>
+        <td>Contract ID</td>
+        <td>: {{code}}</td>
+      </tr>
+      <tr>
+        <td>Minimum Salary</td>
+        <td>: {{qualified_monthly_earned_income}}</td>
+      </tr>
+      <tr>
+        <td>Activation Date</td>
+        <td>: {{activation_date}}</td>
+      </tr>
+      <tr>
+        <td>Percentage Share</td>
+        <td>: {{share_percentage}}</td>
+      </tr>
+    </table>
+    <table>
+        <colgroup>
+            <col span="1" style="width: max-content;" />
+            <col span="1" style="width: max-content;" />
+            <col span="1" style="width: max-content;" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Payment Cap</th>
+                <th>Payment Term</th>
+                <th>Agreement Length</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>IDR {{payment_cap}}</td>
+                <td>{{payment_term}} Bulan</td>
+                <td>{{agreement_length}} Bulan</td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="margin-top: 50px;">
+        Harap menghubungi ISA Provider mengenai status pekerjaan Anda paling lambat 3 bulan setelah kontrak aktif.
+    </p>
+    <p>Jika Anda memiliki pertanyaan, silakan hubungi kami melalui email: <span style="font-weight: normal;">team-isa@hacktiv8.com</span>, atau telepon:
+        <span style="font-weight: normal;">(021)
+                    80675787</span> yang aktif selama jam operasional, <span style="font-weight: normal;">Senin-Jumat
+                    pukul 08.30 - 17.00 WIB</span>.
+    </p>
+</div>
+{{/agreement_contract}}

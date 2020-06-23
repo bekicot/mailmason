@@ -1,4 +1,4 @@
-{{#billing_statement}}
+{{#agreement_contract}}
 
 Kepada {{student.name}},
 
@@ -29,4 +29,4 @@ Contoh: Password dengan tanggal lahir 15 Maret 1993 adalah:
 Jika Anda memiliki pertanyaan, silahkan hubungi kami melalui email: team-isa@hacktiv8.com,
 yang aktif selama jam operasional, Senin-Jumat pukul 09.00 - 18.00 WIB.
 
-{{/billing_statement}}
+{{/agreement_contract}}

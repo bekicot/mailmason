@@ -1,0 +1,7 @@
+{
+  "Name": "Contract Active Template",
+  "Alias": "contract-active-template",
+  "Subject": "Your Contract is Active",
+  "TemplateType": "Standard",
+  "LayoutTemplate": "basic-full"
+}
